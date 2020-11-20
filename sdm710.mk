@@ -22,7 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -93,11 +93,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710
 
-# Livedisplay
-ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-endif
 
 # Power
 PRODUCT_PACKAGES += \
@@ -134,9 +129,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.realme_sdm710
 
 # USB
 PRODUCT_PACKAGES += \
